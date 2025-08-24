@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url('image/background\ img.png');
+    background: url('background\ img.png');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,3 +126,4 @@ body {
 .task-item .delete:hover {
     background: #c62828;
 }
+
