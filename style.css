@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('image/background\ img.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.main {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.main h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.input button {
+    margin-left: 10px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #ffb3d1;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input button:hover {
+    background: #ff80b3;
+}
+
+.tasks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.task-item:hover {
+    background: #f1f1f1;
+}
+
+.task-item span {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+.task-item span.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-item button {
+    margin-left: 8px;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+.task-item .complete {
+    background: #4caf50;
+}
+.task-item .complete:hover {
+    background: #3d8c40;
+}
+
+.task-item .edit {
+    background: #2196f3;
+}
+.task-item .edit:hover {
+    background: #1976d2;
+}
+
+.task-item .delete {
+    background: #f44336;
+}
+.task-item .delete:hover {
+    background: #c62828;
+}
